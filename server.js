@@ -12,6 +12,7 @@ const app = express();
 app.use(
   cors({
     origin: ["http://localhost:3000", "https://ytctrack.netlify.app"],
+    credentials: true, // only if you use cookies or need auth headers
   })
 );
 app.use(helmet());
